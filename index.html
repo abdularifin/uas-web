@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Penjualan Barang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h1>Form Penjualan Barang</h1>
+    </header>
+    
+    <div class="container">
+        <div class="label">
+            <label for="kode_barang">Kode Barang</label>
+            <label for="nama_barang">Nama Barang</label>
+            <label for="harga_barang">Harga Barang</label>
+            <label for="jumlah_barang">Jumlah Barang</label>
+            <label for="total_harga">Total Harga</label>
+            <label for="diskon">Diskon</label>
+            <label for="total_bayar">Total Bayar</label>
+        </div>
+    
+        <div class="form_input">
+            <!-- Form search -->
+            <div class="input">
+                <form id="searchForm">
+                    <input type="text" name="kode_barang" id="kode_barang" class="kode_barang">
+                    <button type="submit">Cari</button>
+                </form>
+            </div>
+        
+            <input type="text" name="nama_barang" id="nama_barang" readonly>
+            <input type="text" name="harga_barang" id="harga_barang" readonly>
+
+            <!-- Form hitung -->
+            <div class="input">
+                <form id="calculateForm">
+                <input type="text" name="jumlah_barang" id="jumlah_barang">
+                <button type="submit">Hitung</button>
+                </form>
+            </div>
+            
+            <input type="text" name="total_harga" id="total_harga" readonly>
+            <input type="text" name="diskon" id="diskon" readonly>
+            
+            <div class="ctn_total">
+                <input type="text" name="total_bayar" id="total_bayar" readonly>
+                <button type="button" onclick="cetak()">Cetak</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="nota" >
+        <h3>Nota</h3>
+        <p>Kode Barang: <span id="kode_barang_nota"></span></p>
+        <p>Nama Barang: <span id="nama_barang_nota"></span></p>
+        <p>Harga Barang: <span id="harga_barang_nota"></span></p>
+        <p>Jumlah Barang: <span id="jumlah_barang_nota"></span></p>
+        <p>Total Harga: <span id="total_harga_nota"></span></p>
+        <p>Diskon: <span id="diskon_nota"></span></p>
+        <p>Total Bayar: <span id="total_bayar_nota"></span></p>
+      </div>
+    <script src="index.js"></script>
+</body>
+</html>
