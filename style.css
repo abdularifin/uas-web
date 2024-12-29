@@ -50,13 +50,11 @@ header {
     gap: 15px;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .form_input {
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin-top: 30px;
     margin-left: 25px;
     gap: 22px;
@@ -66,10 +64,6 @@ header {
     display: flex;
     flex-direction: row;
     gap: 10px;
-}
-
-input .kode_barang {
-    width: 80%;
 }
 
 .ctn_total {
@@ -90,7 +84,7 @@ button {
     background-color: #4b4b4b;
     color: white;
     border: 2px solid transparent;
-    border-radius: 5px;
+    border-radius: 19px;
     cursor: pointer;
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
