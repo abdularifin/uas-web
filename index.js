@@ -47,15 +47,16 @@ const calculate = (e) => {
 
   const diskonField = document.getElementById("diskon");
   const total_bayar = document.getElementById("total_bayar");
+  const hargaBarang = parseInt(document.getElementById("harga_barang").value);
 
   if (jumlah_barang < 10) {
-    diskonField.value = ((10 / 100) * total).toString();
+    diskonField.value = ((10 / 100) * hargaBarang).toString();
     total_bayar.value = (total - parseInt(diskonField.value)).toString();
   } else if (jumlah_barang >= 10 && jumlah_barang <= 15) {
-    diskonField.value = ((15 / 100) * total).toString();
+    diskonField.value = ((15 / 100) * hargaBarang).toString();
     total_bayar.value = (total - parseInt(diskonField.value)).toString();
   } else {
-    diskonField.value = ((20 / 100) * total).toString();
+    diskonField.value = ((20 / 100) * hargaBarang).toString();
     total_bayar.value = (total - parseInt(diskonField.value)).toString();
   }
 };
